@@ -1,11 +1,15 @@
 {
   "name": "react-native",
-  "version": "0.54.0-rc.4",
+  "version": "0.2.5-beta",
   "description": "A framework for building native apps using React",
+  "author": "do-user",
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git@github.com:facebook/react-native.git"
+    "url": "git@git.nevint.com:DOMOBILE-FeiDian/do-otd-mer-react-native.git"
+  },
+  "publishConfig": {
+      "registry": "http://npm-registry.nevint.com/repository/npm-host"
   },
   "engines": {
     "node": ">=4"

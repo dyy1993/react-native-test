@@ -1,5 +1,5 @@
 Pod::Spec.new do |spec|
-  spec.name = 'glog'
+  spec.name = 'GLog'
   spec.version = '0.3.4'
   spec.license = { :type => 'Google', :file => 'COPYING' }
   spec.homepage = 'https://github.com/google/glog'
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   spec.exclude_files       = "src/windows/**/*"
   spec.libraries           = "stdc++"
   spec.pod_target_xcconfig = { "USE_HEADERMAP" => "NO",
-                               "HEADER_SEARCH_PATHS" => "$(PODS_TARGET_SRCROOT)/src" }
+                               "HEADER_SEARCH_PATHS" => "\"$(PODS_TARGET_SRCROOT)\" \"$(PODS_TARGET_SRCROOT)/src\"" }
 
   # Pinning to the same version as React.podspec.
   spec.platforms = { :ios => "8.0", :tvos => "9.2" }
